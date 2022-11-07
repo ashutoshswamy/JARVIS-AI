@@ -3,6 +3,7 @@ import speech_recognition as sr
 import datetime
 import wikipedia
 import webbrowser
+import os
 
 engine = pyttsx3.init("sapi5")
 voices = engine.getProperty("voices")
@@ -12,6 +13,9 @@ engine.setProperty("voice", voices[0].id)
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
+
+
+# In wishMe() function instead of Mr. Swamy you can set your own name
 
 
 def wishMe():
@@ -42,7 +46,7 @@ def takeCommand():
     try:
         print("Recognizing...")
         query = r.recognize_google(audio, language="en-in")
-        print(f"User said: {query}\n")
+        print(f"User said: {query}")
     except Exception as e:
         print("Say that again please...")
         return "None"
@@ -80,6 +84,52 @@ if __name__ == "__main__":
             print("\nOpened Twitter")
             speak("Opened Twitter")
             webbrowser.open("https://twitter.com")
+        elif "open reddit" in query:
+            print("\nOpened Reddit")
+            speak("Opened Reddit")
+            webbrowser.open("https://reddit.com")
+        elif "open pinterest" in query:
+            print("\nOpened Pinterest")
+            speak("Opened Pinterest")
+            webbrowser.open("https://pinterest.com")
+        elif "open github" in query:
+            print("\nOpened GitHub")
+            speak("Opened GitHub")
+            webbrowser.open("https://github.com")
+        elif "open netlify" in query:
+            print("\nOpened Netlify")
+            speak("Opened Netlify")
+            webbrowser.open("https://netlify.com")
+        elif "open discord" in query or "open dc" in query:
+            # Paste Discord's path which is in your system
+            path = "C:\\Users\\HP\\AppData\\Local\\Discord\\app-1.0.9007\\Discord.exe"
+            os.startfile(filepath=path)
+            print("\nOpened Discord")
+            print("Opened Discord")
+        elif "open vs code" in query or "open code" in query:
+            # Paste the VS Code's path which is in your system
+            path = (
+                "C:\\Users\\HP\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            )
+            os.startfile(filepath=path)
+            print("\nOpened Visual Studio Code")
+            speak("Opened Visual Studio Code")
+        elif "open pycharm" in query or "open python ide" in query:
+            # Paste the PyCharm's path which is in your system
+            path = "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.1\\bin\\pycharm64.exe"
+            os.startfile(filepath=path)
+            print("\nOpened PyCharm")
+            speak("Opened PyCharm")
+        elif (
+            "open intelli j" in query
+            or "open intellij" in query
+            or "open java ide" in query
+        ):
+            # Paste the IntelliJ's path which is in your system
+            path = "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2022.2.1\\bin\\idea64.exe"
+            os.startfile(filepath=path)
+            print("\nOpened IntelliJ")
+            speak("Opened IntelliJ")
         elif "date" in query:
             date = datetime.datetime
             final_date = date.date()

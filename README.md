@@ -23,6 +23,14 @@ This is the smaller version of Iron Man's JARVIS.
 - open youtube
 - open instagram
 - open twitter
+- open reddit
+- open pinterest
+- open github
+- open netlify
+- open discord or open dc
+- open vs code or open code
+- open pycharm or python ide
+- open intelli j, open intellij or java ide
 - date
 - time
 - exit
