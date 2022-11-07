@@ -29,6 +29,4 @@ This is the smaller version of Iron Man's JARVIS.
 
 # Contributors
 
-<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo=devashu397/JARVIS-AI"/>
-</a>
+**Ashutosh Swamy ([devashu397](https://github.com/devashu397))**
