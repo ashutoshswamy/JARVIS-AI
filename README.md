@@ -29,4 +29,5 @@ This is the smaller version of Iron Man's JARVIS.
 
 # Contributors
 
-**Ashutosh Swamy ([devashu397](https://github.com/devashu397))**
+- **Ashutosh Swamy ([devashu397](https://github.com/devashu397))**
+- **Aaditya Sadul ([meetaadi16](https://github.com/meetaadi16))**
