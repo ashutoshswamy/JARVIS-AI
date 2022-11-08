@@ -105,7 +105,7 @@ if __name__ == "__main__":
             path = "C:\\Users\\HP\\AppData\\Local\\Discord\\app-1.0.9007\\Discord.exe"
             os.startfile(filepath=path)
             print("\nOpened Discord")
-            print("Opened Discord")
+            speak("Opened Discord")
         elif "open vs code" in query or "open code" in query:
             # Paste the VS Code's path which is in your system
             path = (
